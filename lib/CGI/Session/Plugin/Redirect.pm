@@ -1,8 +1,8 @@
 package CGI::Session::Plugin::Redirect;
 use strict;
 use warnings;
-our $VERSION = '1.00';
-sub CGI::Session::Plugin::redirect {
+our $VERSION = '1.01';
+sub CGI::Session::redirect {
 	my $session = shift;
 	my($url,$param) = split(/\?/,shift,2);
 	my $q = new CGI($param);
